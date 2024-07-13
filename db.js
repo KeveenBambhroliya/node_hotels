@@ -1,9 +1,11 @@
 const { default: mongoose, connect } = require("mongoose");
 require('dotenv').config();
 
-// const mongoURL = process.env.mongoURLocal
+// Local Database
+const mongoURL = process.env.mongoURLocal;
 
-const mongoURL = process.env.mongoURL;
+// Online Database
+// const mongoURL = process.env.mongoURL;
 
 mongoose.connect(mongoURL, {
     // useNewUrlParser: true,
